@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content=" A frog in a pot">
+<meta name="description" content="Measures of correlation and procedures for exploring correlationA measure of correlation is a numerical measure of the relationship between 2 variables (X and Y), where the measurements are taken in pairs - one measurement for each variable. By convention, such measures are crafted so that they meet the following requirements:
+They lie between \(-1\) and \(1\);If larger values of X tend to group with larger values of Y and vice versa, the measure will be positive.">
+
+<meta property="og:title" content="&lt;center&gt;Are carbon dioxide concentrations and &lt;/br&gt;global surface temperatures correlated?&lt;/center&gt;" />
+<meta property="og:description" content="Measures of correlation and procedures for exploring correlationA measure of correlation is a numerical measure of the relationship between 2 variables (X and Y), where the measurements are taken in pairs - one measurement for each variable. By convention, such measures are crafted so that they meet the following requirements:
+They lie between \(-1\) and \(1\);If larger values of X tend to group with larger values of Y and vice versa, the measure will be positive." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/centerare-carbon-dioxide-concentrations-and-/brglobal-surface-temperatures-correlated/center/" />
+
+
+<title>
+
+
+     &lt;center&gt;Are carbon dioxide concentrations and &lt;/br&gt;global surface temperatures correlated?&lt;/center&gt; 
+
+</title>
+<link rel="canonical" href="../../../../blog/centerare-carbon-dioxide-concentrations-and-/brglobal-surface-temperatures-correlated/center/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="../../../../css/reset.css?t=2018-10-17%2011%3a20%3a17.3416473%20-0400%20EDT%20m%3d%2b0.181029301">
+    <link rel="stylesheet" href="../../../../css/pygments.css?t=2018-10-17%2011%3a20%3a17.3416473%20-0400%20EDT%20m%3d%2b0.181029301">
+    <link rel="stylesheet" href="../../../../css/main.css?t=2018-10-17%2011%3a20%3a17.3416473%20-0400%20EDT%20m%3d%2b0.181029301">
+    
+        <link rel="stylesheet" href="../../../../css/override.css?t=2018-10-17%2011%3a20%3a17.3416473%20-0400%20EDT%20m%3d%2b0.181029301">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="../../../../img/froggy.ico"
+
+>
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                
+                <a href="../../../../"><img class="avatar" src="../../../../img/froglogo.jpg" srcset="../../../../img/froglogo.jpg 1x"></a>
+            
+            <a href="../../../../"><div class="name"> A frog in a pot</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-blog"><a href="../../../../blog/"><span>Blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="../../../../about/"><span>About</span></a></li>
+                    
+                        <li class="nav-code"><a href="../../../../code/"><span>Code</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+
+        
+
+        
+
+	
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    &lt;center&gt;Are carbon dioxide concentrations and &lt;/br&gt;global surface temperatures correlated?&lt;/center&gt;
+
+</div>
+
+                    <div class="initials"><a href="../../../../">ad</a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Mon Jan 1 0001 00:00:00 UTC'>Jan 1, 0001</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>5 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <div id="measures-of-correlation-and-procedures-for-exploring-correlation" class="section level3">
+<h3>Measures of correlation and procedures for exploring correlation</h3>
+<p>A measure of correlation is a numerical measure of the relationship between 2 variables (X and Y), where the measurements are taken in pairs - one measurement for each variable. By convention, such measures are crafted so that they meet the following requirements:</p>
+<ul>
+<li>They lie between <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>;</li>
+<li>If larger values of X tend to group with larger values of Y and vice versa, the measure will be positive. If larger values of X tend to group with smaller values of Y and vice versa, the measure will be negative;</li>
+<li>The stronger the tendency to group large with large and small with small, the closer the measure will be to <span class="math inline">\(1\)</span>; and</li>
+<li>The stronger the tendency to group large with small, the closer the measure will be to <span class="math inline">\(-1\)</span>.</li>
+</ul>
+<p>Our process will consist of two phases: First, we will perform an exploratory review of the data to see if possible correlation surfaces. Second, we will calculate various the various correlation measures and see if they indicate correlation.</p>
+</div>
+<div id="exploratory-review-of-the-time-series-and-their-relationship" class="section level3">
+<h3>Exploratory review of the time series and their relationship</h3>
+<p>Generally, we will first look to graphical representations of the data pairs to see if the two variables pair more or less in one of the ways described above (large with large or large with small). Side-by-side time series can reveal similar patterns over time. In addition, scatterplots of the data pairs can reveal the correlation relationship.</p>
+<p>Our first step is to explore the data series. The first thing we can do is to look at a chart of the annual <span class="math inline">\(CO_2\)</span> data next to the annual temperature data and the monthly <span class="math inline">\(CO_2\)</span> data next to the monthly temperature data.</p>
+<p>First, we look at the annual data. We can see that both of the series show a relatively steady increase over time. The carbon dioxide series is much smoother, though both are increasing in roughly similar fashion on average over time.</p>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Then we can look at the two monthly series. Obviously, monthly series are more jagged than annual. We can see that the monthly carbon dioxide series reveals a seasonal fluctuation that reflects higher concentrations during northern hemisphere winters. Nevertheless, both series still reflect the same general ascending pattern.</p>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="scatterplots-of-carbon-dioxide-concentration-vs.surface-temperature" class="section level3">
+<h3>Scatterplots of carbon dioxide concentration vs. surface temperature</h3>
+<p>Scatterplots are different from the time series above. Here we will take each pair of measurements taken at the same time and will plot carbon dioxide concentration against surface temperature. We are looking to see if there is a linear relationship between the two numbers (in other words, we are looking to see if surface temperature increases when carbon dioxide concentration increases.) In both cases, we can see that there is a very strong linear relationship between the two variables.</p>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+<div id="various-correlation-coefficients" class="section level3">
+<h3>Various correlation coefficients</h3>
+<p>Pearson’s correlation coefficient:</p>
+<p><span class="math display">\[\rho_{x,y}=\frac{\sigma_{xy}}{\sigma_x \sigma_y}=\frac{E[(X-\mu_x)(Y-\mu_y)]}{\sigma_x \sigma_y}\]</span></p>
+<p><span class="math display">\[r_{xy}=\frac{\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n (x_i-\bar{x})^2\sum_{i=1}^n (y_i-\bar{y})^2}}\]</span></p>
+<p>Some say that Pearson’s correlation coefficient requires the data to be normal. Others say it is not required but if the data is bivariate normal, “Pearson’s correlation provides a complete description of the association.”\</p>
+<p>Spearman’s Rho is Pearson’s r computed on ranks and average ranks:</p>
+<p><span class="math display">\[\rho = \frac{\sum_{i=1}^n R(X_i)R(Y_i)-n(\frac{n+1}{2})^2}{(\sum_{i=1}^n R(X_i)^2-n(\frac{n+1}{2})^2)^{\frac{1}{2}} (\sum_{i=1}^n R(Y_i)^2-n(\frac{n+1}{2})^2)^{\frac{1}{2}}}   \]</span></p>
+<p>Kendall’s Tau is another measure of rank correlation. We are given a bivariate sample of size <span class="math inline">\(n\)</span> in the form of <span class="math inline">\((x_i,y_i)\)</span> for <span class="math inline">\(i=1,2,\dots,n\)</span>. We compare each pair of observations, i.e., <span class="math inline">\(\binom{n}{2}\)</span> pairs of observations. We determine whether each pair is discordant or concordant, where concordant means that the two numbers in one member of the pair differ in the same direction from the two numbers in the other member of the pair. Discordant is the reverse. If there are no ties, Kendall’s Tau is then:</p>
+<p><span class="math display">\[\tau = \frac{N_c-N_d}{n(n-1)/2}  \]</span></p>
+<p>where <span class="math inline">\(N_c\)</span> is the number of concordant pairs and <span class="math inline">\(N_d\)</span> is the number of discordant pairs. If there are ties, we use:</p>
+<p><span class="math display">\[\tau = \frac{N_c-N_d}{N_c+N_d}  \]</span></p>
+<p>where we consider only pairs where <span class="math inline">\(x_i \neq x_j\)</span>.</p>
+</div>
+<div id="correlation-coefficients-co_2-to-surface-temperature-1959-2017" class="section level3">
+<h3>Correlation coefficients CO<span class="math inline">\(_2\)</span> to Surface Temperature 1959-2017</h3>
+<p>We can calculate the Pearson, Spearman and Kendall correlation coefficients comparing the Mauna Loa carbon dioxide data to the GISS surface temperature data. All of the coefficients are in excess of 0.69. This is generally considered to be strong correlation.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Pearson</th>
+<th align="right">Spearman</th>
+<th align="right">Kendall</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Annual Data</td>
+<td align="right">0.949</td>
+<td align="right">0.933</td>
+<td align="right">0.779</td>
+</tr>
+<tr class="even">
+<td>Monthly Data</td>
+<td align="right">0.890</td>
+<td align="right">0.889</td>
+<td align="right">0.695</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="can-we-predict-surface-temperature-increases-from-anticipated-carbon-dioxide-increases" class="section level3">
+<h3>Can we predict surface temperature increases </br>from anticipated carbon dioxide increases?</h3>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r"><code>#Properties of the regression line (the red trend line above)
+summary(lm1)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = gissann ~ mlann)
+## 
+## Residuals:
+##       Min        1Q    Median        3Q       Max 
+## -0.200323 -0.066929  0.005492  0.071795  0.171007 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -3.3457158  0.1621733  -20.63   &lt;2e-16 ***
+## mlann        0.0103483  0.0004575   22.62   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.09359 on 57 degrees of freedom
+## Multiple R-squared:  0.8998, Adjusted R-squared:  0.898 
+## F-statistic: 511.6 on 1 and 57 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>#Predictions for CO2 concentrations of 425 to 700, increments of 25
+new &lt;- data.frame(mlann = seq(425,700,by=25))
+predictions &lt;- predict(lm1,newdata=new,interval=&quot;prediction&quot;)
+round(predictions,2)</code></pre>
+<pre><code>##     fit  lwr  upr
+## 1  1.05 0.85 1.25
+## 2  1.31 1.10 1.52
+## 3  1.57 1.35 1.79
+## 4  1.83 1.60 2.06
+## 5  2.09 1.84 2.33
+## 6  2.35 2.08 2.61
+## 7  2.60 2.33 2.88
+## 8  2.86 2.57 3.16
+## 9  3.12 2.81 3.43
+## 10 3.38 3.05 3.71
+## 11 3.64 3.29 3.99
+## 12 3.90 3.53 4.27</code></pre>
+<pre class="r"><code>#plot(c(mlann,seq(425,700,25)),c(gissann,predictions[,1]),
+plot(mlann,gissann,
+     main=&quot;CO2 vs. Temp Annual 1959-2017 PLUS predictions&quot;,
+     xlab=&quot;CO2 Annual Mauna Loa&quot;,ylab=&quot;GISS Annual Surface Temp Anomaly&quot;,
+     xlim=c(300,700),ylim=c(-.5,4))
+points(seq(425,700,25),predictions[,1],col=&quot;blue&quot;)
+lines(seq(425,700,25),predictions[,2],type=&quot;l&quot;,col=&quot;red&quot;)
+lines(seq(425,700,25),predictions[,3],type=&quot;l&quot;,col=&quot;red&quot;)</code></pre>
+<p><img src="../../../../blog/rmdtest_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+</div>
+
+                <br>
+                
+                <p class="back-to-posts"><a href="../../../../blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cocoaexamplesite" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
