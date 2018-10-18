@@ -67,16 +67,6 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title>&lt;center&gt;Are carbon dioxide concentrations and &lt;/br&gt;global surface temperatures correlated?&lt;/center&gt;</title>
-      <link>/blog/centerare-carbon-dioxide-concentrations-and-/brglobal-surface-temperatures-correlated/center/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/centerare-carbon-dioxide-concentrations-and-/brglobal-surface-temperatures-correlated/center/</guid>
-      <description>Measures of correlation and procedures for exploring correlationA measure of correlation is a numerical measure of the relationship between 2 variables (X and Y), where the measurements are taken in pairs - one measurement for each variable. By convention, such measures are crafted so that they meet the following requirements:
-They lie between \(-1\) and \(1\);If larger values of X tend to group with larger values of Y and vice versa, the measure will be positive.</description>
-    </item>
-    
-    <item>
       <title>Does Rmd work on my site?</title>
       <link>/blog/does-rmd-work-on-my-site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
